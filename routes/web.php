@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/calc/{score_1}/{addition}/{score_2}', [App\Http\Controllers\CalcController::class, 'calc']);
+Route::get('/calcs/{score_1}/{addition}/{score_2}', [App\Http\Controllers\CalcController::class, 'calc']);
