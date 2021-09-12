@@ -13,10 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/calcs//演算子/値2', function () {
-    return '<h1>計算アプリです</h1>';
-});
+Route::get('/calc/{score_1}/{addition}/{score_2}', [App\Http\Controllers\CalcController::class, 'calc']);
