@@ -16,4 +16,4 @@ Route::get('/', function () {
     return '<h1>はじまりのぺーじ</h1>';
 });
 
-Route::get('/calcs/{score_1}/{addition}/{score_2}', [App\Http\Controllers\CalcController::class, 'calc']);
+Route::get('/calcs/{score_1}/{addition}/{score_2}', [App\Http\Controllers\CalcController::class, 'result']);
