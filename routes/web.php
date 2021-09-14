@@ -12,7 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-    return view('welcome');
+    return '<h1>はじまりのぺーじ</h1>';
 });
+
+Route::get('/calcs/{score_1}/{operator}/{score_2}', [App\Http\Controllers\CalcController::class, 'result']);
