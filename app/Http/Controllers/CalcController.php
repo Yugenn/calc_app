@@ -10,13 +10,13 @@ class CalcController extends Controller
     {
         $result = '';
 
-        if($operator == 'addition' ){
+        if ($operator == 'addition' ) {
             $result = $score_1 + $score_2;
-        } elseif ($operator == 'subtraction' ){
+        } elseif ($operator == 'subtraction' ) {
             $result = $score_1 - $score_2;
-        } elseif ($operator == 'multiplication' ){
+        } elseif ($operator == 'multiplication' ) {
             $result = $score_1 * $score_2;
-        } elseif ($operator == 'division' ){
+        } elseif ($operator == 'division' ) {
             $result = $score_1 / $score_2;
         } else {
             $result ='演算子を確認してください';
